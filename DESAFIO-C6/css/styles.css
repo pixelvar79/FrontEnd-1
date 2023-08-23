@@ -1,0 +1,55 @@
+*{
+    box-sizing: border-box;
+    padding: none;
+    margin: none;
+    font-family: 'Raleway', sans-serif;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 15vh;
+}
+header img{
+    width: 200px;
+}
+header nav{
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+header nav ul{
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+main{
+    height: 5vh;
+    }
+main h1, section h3{
+    color: rgb(61, 83, 147);
+    background-color: grey;
+    width: 100%;
+    padding: 15px;
+    }
+.section1, .section2{
+    height: 10vh;
+}
+.no-item-list{
+    list-style: none ;
+}
+
+footer{
+    color: white;
+    background-color: rgb(53, 53, 178);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+i{
+    font-size: 30px;
+}
+footer a{
+    color: white;
+}
