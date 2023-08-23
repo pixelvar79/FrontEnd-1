@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+
+    background-color: #cccccc;
+}
+/*============== header ========================*/
+.hamburguer{
+    display: none;
+}
+.header{
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 30px;
+    background: rgba(34, 34, 34, 1);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.logo{
+    display: flex;
+    align-items: center ;
+    gap: 10px;
+}
+.textoLogo{
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 700;
+}
+.textoRojo{
+    color: rgba(252, 32, 12, 1);
+}
+.textoVerde{
+    color:rgba(57, 178, 74, 1);
+}
+
+.nav ul{
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+.nav ul li{
+    color: #ffffff
+}
+
+/*============== main ========================*/
+
+.main{
+    min-height: 500px;
+    display: flex;
+    flex-flow: row wrap-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.section1{
+    position: relative;
+    height: 300px;
+}
+.section1 img{
+    width: 450px;
+    height: 300px;
+    border-radius: 5px;
+}
+.section1 h2{
+    color:#ffffff;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+
+.section2{
+    width: 450px;
+    height: 300px;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    background-color: #ffffff;
+}
+
+.section2 h2{
+    text-align: center;
+    color: rgba(252, 32, 12, 1);
+}
+
+.topContainer{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+.top{
+    display: flex;
+    flex-direction: column;
+    gap: 17px
+}
+.topTitle{
+    font-weight: 700;
+    font-size: 20px;
+}
+.topList{
+    font-weight: 700;
+    font-size: 16px;  
+}
+
+
+/*============== footer ========================*/
+
+
+.footer{
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    padding: 15px;
+    background: rgba(34, 34, 34, 1);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.footerNav{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.footerNav li{
+    list-style: none ;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+}
+
+
+/*============== media querys ========================*/
+
+@media screen and (max-width :900px){
+    .footer{
+        flex-direction: row-reverse;
+    }
+    .hamburguer{
+        display: block;
+        color: #ffffff;
+        font-size: 30px;
+    }
+    .nav{
+        display: none;
+    }
+}
